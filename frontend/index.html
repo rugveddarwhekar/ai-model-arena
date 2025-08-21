@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Arena</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>AI Model Arena</h1>
+            <p class="subtitle">Battle of the AI models - compare responses in real-time</p>
+        </header>
+
+        <div class="controls-section">
+            <div class="controls-grid">
+                <div class="model-selector">
+                    <h3>Select Models</h3>
+                    <div class="model-toggles" id="model-toggles">
+                        <!-- Model toggles will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="display-options">
+                    <h3>Display Options</h3>
+                    <div class="option-toggles">
+                        <label class="option-toggle">
+                            <input type="checkbox" id="show-thinking" checked>
+                            <span class="toggle-slider"></span>
+                            <span class="toggle-label">Show thinking mode</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <div class="response-grid" id="response-container">
+                <!-- Response columns will be created here -->
+            </div>
+        </main>
+
+        <footer class="footer">
+            <form id="chat-form" class="chat-form">
+                <div class="input-container">
+                    <textarea 
+                        id="prompt-input" 
+                        placeholder="Challenge the models with your question..."
+                        required
+                    ></textarea>
+                    <div class="button-group">
+                        <button type="button" id="stop-button" class="stop-button" disabled>
+                            <span class="button-text">Stop</span>
+                        </button>
+                        <button type="submit" id="send-button" class="send-button">
+                            <span class="button-text">Send</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
