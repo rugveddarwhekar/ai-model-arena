@@ -2,6 +2,9 @@
 
 A web application that allows you to compare responses from multiple local AI models simultaneously. Built with FastAPI backend and vanilla JavaScript frontend.
 
+## Screenshot
+![AI Model Arena Screenshot](ai-model-arena.png)
+
 ## Features
 
 - **Multi-model comparison**: Send the same prompt to multiple Ollama models at once
@@ -10,7 +13,7 @@ A web application that allows you to compare responses from multiple local AI mo
 - **Local models**: Uses your local Ollama installation for privacy and speed
 - **Modern UI**: Clean, responsive interface with pastel colors
 - **Model selection**: Toggle individual models on/off
-- **Thinking mode**: Separate and toggle thinking process from final responses
+- **Thinking mode**: Separate and toggle the thinking process from the final responses
 - **Copy functionality**: Easy copying of responses and thinking content
 - **Collapsible sections**: Expand/collapse response boxes
 - **Stop generation**: Cancel ongoing requests at any time
